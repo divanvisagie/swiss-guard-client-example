@@ -1,0 +1,7 @@
+version: '2'
+services:
+    swissguard:
+        image: divanvisagie/swissguard
+        ports:
+            - "9999:9999"
+            - "9990:9990"
