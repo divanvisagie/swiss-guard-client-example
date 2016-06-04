@@ -9,14 +9,10 @@ before_install:
     - sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
     - git submodule update --init --recursive
 
-services:
-  - docker
-
 scala:
   - 2.11.7
 
 jdk:
-  - openjdk7
   - oraclejdk7
   - oraclejdk8
 
