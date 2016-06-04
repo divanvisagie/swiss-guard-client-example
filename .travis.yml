@@ -1,0 +1,23 @@
+language: scala
+
+# disable the default submodule logic
+git:
+  submodules: false
+
+# Use sed to replace the SSH URL with the public URL, then initialize submodules
+before_install:
+    - sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
+    - git submodule update --init --recursive
+
+services:
+  - docker
+
+scala:
+  - 2.11.7
+
+jdk:
+  - openjdk7
+  - oraclejdk7
+  - oraclejdk8
+
+script: sbt client/test
