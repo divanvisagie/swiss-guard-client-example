@@ -1,4 +1,5 @@
 # swiss-guard-client-example
+[![Build Status](https://travis-ci.org/divanvisagie/swiss-guard-client-example.svg?branch=master)](https://travis-ci.org/divanvisagie/swiss-guard-client-example)
 
 A client example for swiss-guard
 
